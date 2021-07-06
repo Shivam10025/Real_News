@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="@color/md_grey_800"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:padding="15dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/school"
+            android:id="@+id/imgv"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cn"
+            android:layout_toRightOf="@+id/imgv"
+            android:textColor="@color/md_deep_orange_A400"
+            android:text="@string/college_name"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="15dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
